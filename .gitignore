@@ -1,0 +1,32 @@
+# Unity generated folders to exclude
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+sysinfo.txt
+
+# Unity crash and log files
+*.stacktrace
+*.log
+
+# Rider/VS/JetBrains IDEs
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+.idea/
+.vscode/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db

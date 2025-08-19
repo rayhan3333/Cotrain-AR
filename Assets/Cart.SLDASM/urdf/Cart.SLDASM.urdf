@@ -1,0 +1,3861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Cart.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.41426483252416E-07 -0.163432953037324 0.552457766148795"
+        rpy="0 0 0" />
+      <mass
+        value="251.331338880703" />
+      <inertia
+        ixx="31.6451818412014"
+        ixy="8.03939687357409E-09"
+        ixz="6.48127276796058E-05"
+        iyy="36.1870284530016"
+        iyz="0.00946823113203357"
+        izz="16.4227889914467" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="C_A1_L0">
+    <inertial>
+      <origin
+        xyz="0.0568401189750009 4.12437087371487E-07 0.148466808963967"
+        rpy="0 0 0" />
+      <mass
+        value="8.19044705659408" />
+      <inertia
+        ixx="0.0849399138017183"
+        ixy="-2.62415327575619E-07"
+        ixz="-0.00950408519583723"
+        iyy="0.0840388037894648"
+        iyz="-7.34496732080491E-07"
+        izz="0.0337578517914833" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A1_L0"
+    type="prismatic">
+    <origin
+      xyz="0.1912 -0.1016 0.7611"
+      rpy="-3.1416 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="C_A1_L0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="C_A1_L1">
+    <inertial>
+      <origin
+        xyz="-1.53732094387848E-06 0.181425880608415 -0.108875254172993"
+        rpy="0 0 0" />
+      <mass
+        value="4.2851971269486" />
+      <inertia
+        ixx="0.16530081622366"
+        ixy="9.85076637265324E-08"
+        ixz="1.28266441520161E-07"
+        iyy="0.0318878525507908"
+        iyz="-0.0216371077902923"
+        izz="0.151815227099322" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A1_L1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="C_A1_L0" />
+    <child
+      link="C_A1_L1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="C_A1_L2">
+    <inertial>
+      <origin
+        xyz="0.208919873467034 -5.98681643881882E-06 0.0907666144838897"
+        rpy="0 0 0" />
+      <mass
+        value="3.37391295638728" />
+      <inertia
+        ixx="0.0170495831652975"
+        ixy="9.53523844405788E-08"
+        ixz="0.00102510166929132"
+        iyy="0.122639914279667"
+        iyz="-4.55783665925449E-07"
+        izz="0.114771908742367" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A1_L2"
+    type="continuous">
+    <origin
+      xyz="0 0.4318 -0.17125"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="C_A1_L1" />
+    <child
+      link="C_A1_L2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="C_A1_L3">
+    <inertial>
+      <origin
+        xyz="-7.80457090732156E-07 0.0671937597670209 -0.0457966340632676"
+        rpy="0 0 0" />
+      <mass
+        value="0.955411449199707" />
+      <inertia
+        ixx="0.00502239974642487"
+        ixy="1.37715041231817E-08"
+        ixz="6.06906568619736E-08"
+        iyy="0.00485366592677737"
+        iyz="0.000256157144769027"
+        izz="0.00220603249495337" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A1_L3"
+    type="continuous">
+    <origin
+      xyz="0.4318 0 0"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="C_A1_L2" />
+    <child
+      link="C_A1_L3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="C_A1_L4">
+    <inertial>
+      <origin
+        xyz="7.51020667877356E-08 0.133689552376979 0.106531282887325"
+        rpy="0 0 0" />
+      <mass
+        value="3.17072930481283" />
+      <inertia
+        ixx="0.0814803861538941"
+        ixy="-4.7064166739361E-09"
+        ixz="3.02080268973969E-09"
+        iyy="0.0179293396076295"
+        iyz="-0.0218807205955914"
+        izz="0.0668097456900368" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A1_L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A1_L4"
+    type="continuous">
+    <origin
+      xyz="0 0.07305 0.061"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="C_A1_L3" />
+    <child
+      link="C_A1_L4" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <!-- insert PSM 1-->
+  <link
+    name="base_link1">
+    <inertial>
+      <origin
+        xyz="-1.18741555048179E-08 -0.170155335321591 -0.0856068342185303"
+        rpy="0 0 0" />
+      <mass
+        value="2.01611936799798" />
+      <inertia
+        ixx="0.0334285326507196"
+        ixy="4.64200047056906E-10"
+        ixz="-2.57122028275464E-09"
+        iyy="0.00942519512814716"
+        iyz="0.00334011712880409"
+        izz="0.0289733384845702" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link_PSM.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link_PSM.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+      name="PSM1_RCM"
+      type="fixed">
+    <origin
+        xyz="0.0 0.8343 -0.04984"
+        rpy="0.0 ${PI} 0.0" />
+    <parent
+        link="C_A1_L4" />
+    <child
+        link="base_link1" />
+  </joint>
+  <link
+    name="yaw_Link1">
+    <inertial>
+      <origin
+        xyz="-0.038768826895421 7.84810687538382E-05 0.0415960702785929"
+        rpy="0 0 0" />
+      <mass
+        value="1.47048370646334" />
+      <inertia
+        ixx="0.0181432072832042"
+        ixy="-4.42692109987319E-06"
+        ixz="-0.000485887653924728"
+        iyy="0.0157144975865826"
+        iyz="7.28306470719894E-06"
+        izz="0.00824930410920911" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/yaw_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="yaw_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link1" />
+    <child
+      link="yaw_Link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_back_Link1">
+    <inertial>
+      <origin
+        xyz="-0.0116509415966225 -0.0362409831473348 3.55759910590988E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.984944647833387" />
+      <inertia
+        ixx="0.00197274180266606"
+        ixy="-0.00044199308571368"
+        ixz="-4.08253443965781E-07"
+        iyy="0.00561318906682764"
+        iyz="-1.26989789282641E-06"
+        izz="0.00557903259577521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_back_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_back_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_back_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0296"
+      rpy="-1.5708 -0.29073 0" />
+    <parent
+      link="yaw_Link1" />
+    <child
+      link="pitch_back_Link1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_bottom_Link1">
+    <inertial>
+      <origin
+        xyz="0.256832099418569 -0.0103480348656513 -6.17918787843765E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.445694866856226" />
+      <inertia
+        ixx="0.000459792543956463"
+        ixy="-0.000318009798755438"
+        ixz="3.98499062508475E-07"
+        iyy="0.011271027728255"
+        iyz="2.50630970360201E-08"
+        izz="0.0111023946030583" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_bottom_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_bottom_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_bottom_joint1"
+    type="continuous">
+    <origin
+      xyz="0.150000000000001 0 0"
+      rpy="0 0 1.86152392470427" />
+    <parent
+      link="pitch_back_Link1" />
+    <child
+      link="pitch_bottom_Link1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_end_Link1">
+    <inertial>
+      <origin
+        xyz="-0.00192933659672778 -0.136126867582951 -5.97042575623084E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.09102449600226" />
+      <inertia
+        ixx="0.0428446589914192"
+        ixy="-0.00123970076885623"
+        ixz="2.89034643154435E-11"
+        iyy="0.00156904884363725"
+        iyz="1.61608502107055E-08"
+        izz="0.0422745310219351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_end_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_end_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_end_joint1"
+    type="continuous">
+    <origin
+      xyz="0.516000000000004 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="pitch_bottom_Link1" />
+    <child
+      link="pitch_end_Link1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="main_insertion_Link1">
+    <inertial>
+      <origin
+        xyz="0.00405627466206304 -0.00010934070517156 0.0104645658395064"
+        rpy="0 0 0" />
+      <mass
+        value="0.224908528510799" />
+      <inertia
+        ixx="0.00146102483490814"
+        ixy="-1.39327117443586E-07"
+        ixz="9.74684983027102E-06"
+        iyy="0.00140269171680101"
+        iyz="-1.56795926093259E-06"
+        izz="8.71925300786774E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/main_insertion_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.556862745098039 0.0588235294117647 0.4" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/main_insertion_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="main_insertion_joint1"
+    type="prismatic">
+    <origin
+      xyz="0.043 -0.28809 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="pitch_end_Link1" />
+    <child
+      link="main_insertion_Link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tool_roll_link1">
+    <inertial>
+      <origin
+        xyz="-1.11532435509432E-08 -6.6823986593555E-09 -0.00582338046522377"
+        rpy="0 0 0" />
+      <mass
+        value="0.000332248729031213" />
+      <inertia
+        ixx="3.38636633286667E-09"
+        ixy="-7.19368459031559E-14"
+        ixz="2.65893854539229E-14"
+        iyy="3.00439499234113E-09"
+        iyz="5.81813222258735E-16"
+        izz="3.06558087973818E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_roll_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_roll_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_roll_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.41690000000025"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="main_insertion_Link1" />
+    <child
+      link="tool_roll_link1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="tool_pitch_link1">
+    <inertial>
+      <origin
+        xyz="0.00357679574849837 -4.86716344861859E-05 4.30864744424951E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.000259757477941411" />
+      <inertia
+        ixx="1.5106839937408E-09"
+        ixy="-4.78038784281558E-13"
+        ixz="7.19611086185614E-14"
+        iyy="2.24394015473119E-09"
+        iyz="-6.72201295370511E-14"
+        izz="2.52209114024657E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_pitch_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_pitch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_pitch_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="tool_roll_link1" />
+    <child
+      link="tool_pitch_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_yaw_link1">
+    <inertial>
+      <origin
+        xyz="-3.38952951650343E-15 -1.5779044737485E-13 -5.00000011357526E-05"
+        rpy="0 0 0" />
+      <mass
+        value="6.6366144807084E-06" />
+      <inertia
+        ixx="1.45272725726673E-11"
+        ixy="-5.89016142565026E-29"
+        ixz="3.04410826403519E-28"
+        iyy="1.45272725726673E-11"
+        iyz="-3.69293450325411E-28"
+        izz="1.40198480904964E-12" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_yaw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_yaw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_yaw_joint1"
+    type="continuous">
+    <origin
+      xyz="0.00909999999990735 -5.00000000006606E-05 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="tool_pitch_link1" />
+    <child
+      link="tool_yaw_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_gripper1_link1">
+    <inertial>
+      <origin
+        xyz="0.000188736572120506 0.00135264242377037 -0.000866946481578035"
+        rpy="0 0 0" />
+      <mass
+        value="3.906958594018E-05" />
+      <inertia
+        ixx="3.48956207778842E-10"
+        ixy="-3.12215330147036E-11"
+        ixz="-4.73124191877469E-12"
+        iyy="6.90406732743504E-11"
+        iyz="-4.14656110451125E-11"
+        izz="3.89386761583552E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_gripper1_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="tool_yaw_link" />
+    <child
+      link="tool_gripper1_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_gripper2_link1">
+    <inertial>
+      <origin
+        xyz="-0.000188736572127269 0.00135264242377034 0.000866946479306852"
+        rpy="0 0 0" />
+      <mass
+        value="3.906958594018E-05" />
+      <inertia
+        ixx="3.48956207778838E-10"
+        ixy="3.1221533014704E-11"
+        ixz="-4.73124191877455E-12"
+        iyy="6.90406732743506E-11"
+        iyz="4.14656110451119E-11"
+        izz="3.89386761583548E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_gripper2_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="tool_yaw_link1" />
+    <child
+      link="tool_gripper2_link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_top_Link1">
+    <inertial>
+      <origin
+        xyz="0.312459561160537 -0.000565655662915554 -3.4131485644066E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.178406510206941" />
+      <inertia
+        ixx="0.000149887039469712"
+        ixy="1.12753385823003E-05"
+        ixz="6.15489152141568E-09"
+        iyy="0.00463460001936713"
+        iyz="-1.52835136229151E-11"
+        izz="0.00449516000245412" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_top_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_top_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_top_joint1"
+    type="continuous">
+    <origin
+      xyz="0.183657966666667 0.0141205977162994 0"
+      rpy="0 0 1.86152392470384" />
+    <parent
+      link="pitch_back_Link1" />
+    <child
+      link="pitch_top_Link1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="counterweight_Link1">
+    <inertial>
+      <origin
+        xyz="0.00864945005675313 -7.99999995084297E-07 -0.0428319993376595"
+        rpy="0 0 0" />
+      <mass
+        value="0.0572294566812768" />
+      <inertia
+        ixx="4.07512584699308E-05"
+        ixy="-3.70276415216852E-20"
+        ixz="-7.26206416684738E-22"
+        iyy="6.1224274372571E-06"
+        iyz="-1.14884401091105E-19"
+        izz="4.07512584699308E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/counterweight_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/counterweight_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="counterweight_joint1"
+    type="prismatic">
+    <origin
+      xyz="0.028665 -0.095804 0"
+      rpy="1.5708 0 1.8615" />
+    <parent
+      link="pitch_back_Link1" />
+    <child
+      link="counterweight_Link1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="pitch_front_Link1">
+    <inertial>
+      <origin
+        xyz="0.0962686548282791 8.6763929374456E-14 0.0475509864128363"
+        rpy="0 0 0" />
+      <mass
+        value="0.0744252818496182" />
+      <inertia
+        ixx="8.75948153763795E-06"
+        ixy="-1.95773031032992E-16"
+        ixz="1.7108923278664E-05"
+        iyy="0.000226538553224573"
+        iyz="1.53635459503282E-17"
+        izz="0.000223217548259648" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_front_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_front_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_front_joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0664000000000003"
+      rpy="-1.57079632679489 -0.290727597908941 0" />
+    <parent
+      link="yaw_Link1" />
+    <child
+      link="pitch_front_Link1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="C_A2_L0">
+    <inertial>
+      <origin
+        xyz="0.0568401189750007 4.12437087232709E-07 0.148466808963967"
+        rpy="0 0 0" />
+      <mass
+        value="8.19044705659411" />
+      <inertia
+        ixx="0.0849399138017188"
+        ixy="-2.62415327590101E-07"
+        ixz="-0.00950408519583733"
+        iyy="0.0840388037894653"
+        iyz="-7.34496732014122E-07"
+        izz="0.0337578517914834" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A2_L0"
+    type="prismatic">
+    <origin
+      xyz="0 0.0896 0.7611"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="C_A2_L0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="C_A2_L1">
+    <inertial>
+      <origin
+        xyz="-1.53732094337888E-06 -0.181425880608416 0.108875254172993"
+        rpy="0 0 0" />
+      <mass
+        value="4.28519712694865" />
+      <inertia
+        ixx="0.165300816223662"
+        ixy="-9.85076637436948E-08"
+        ixz="-1.2826644151395E-07"
+        iyy="0.0318878525507909"
+        iyz="-0.0216371077902926"
+        izz="0.151815227099323" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A2_L1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="C_A2_L0" />
+    <child
+      link="C_A2_L1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="C_A2_L2">
+    <inertial>
+      <origin
+        xyz="0.208919873467034 5.98681643856902E-06 -0.0907666144838897"
+        rpy="0 0 0" />
+      <mass
+        value="3.37391295638731" />
+      <inertia
+        ixx="0.0170495831652977"
+        ixy="-9.53523845124837E-08"
+        ixz="-0.00102510166929152"
+        iyy="0.122639914279668"
+        iyz="-4.55783665936231E-07"
+        izz="0.114771908742368" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A2_L2"
+    type="continuous">
+    <origin
+      xyz="0 -0.4318 0.17125"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="C_A2_L1" />
+    <child
+      link="C_A2_L2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="C_A2_L3">
+    <inertial>
+      <origin
+        xyz="0.10175270505249 0.025913890751992 -3.34385008682325E-07"
+        rpy="0 0 0" />
+      <mass
+        value="3.45924490588258" />
+      <inertia
+        ixx="0.0229632930111855"
+        ixy="-0.00595610077478552"
+        ixz="3.34205098598603E-08"
+        iyy="0.0229722469896469"
+        iyz="2.42316431806299E-08"
+        izz="0.0422114398260218" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A2_L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A2_L3"
+    type="continuous">
+    <origin
+      xyz="0.4318 0 0.052"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="C_A2_L2" />
+    <child
+      link="C_A2_L3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+    <!-- insert ECM-->
+  <link
+    name="base_link_e">
+    <inertial>
+      <origin
+        xyz="-0.00481467959056703 1.1942461826564E-05 0.0689760489333482"
+        rpy="0 0 0" />
+      <mass
+        value="2.63420248389108" />
+      <inertia
+        ixx="0.0141278655491154"
+        ixy="2.07111707403137E-06"
+        ixz="0.000312460897947865"
+        iyy="0.0159565378619535"
+        iyz="-1.88073596815443E-06"
+        izz="0.0142637345726268" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+      name="ECM_RCM"
+      type="fixed">
+    <origin
+        xyz="-0.45788 0.55053 0.0"
+        rpy="${PI/2} ${PI} -${PI/4}" />
+    <parent
+        link="C_A2_L3" />
+    <child
+        link="base_link_e" />
+  </joint>
+  <link
+    name="yaw_link">
+    <inertial>
+      <origin
+        xyz="2.75042897679434E-07 -0.02904544365339 0.106689833865399"
+        rpy="0 0 0" />
+      <mass
+        value="6.41681356178731" />
+      <inertia
+        ixx="0.0451216527375256"
+        ixy="-2.1621516856438E-08"
+        ixz="3.52277603811885E-08"
+        iyy="0.0454443648431323"
+        iyz="0.0056156874288659"
+        izz="0.0234898279846618" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/yaw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/yaw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="yaw_joint"
+    type="continuous">
+    <origin
+      xyz="0.0732 0 0.10146"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="yaw_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_front_link">
+    <inertial>
+      <origin
+        xyz="-0.0306186871112428 -0.135784678088635 -5.78277004059657E-08"
+        rpy="0 0 0" />
+      <mass
+        value="1.60687288264104" />
+      <inertia
+        ixx="0.0170064625821012"
+        ixy="-0.00994677032592871"
+        ixz="-4.86864980926456E-09"
+        iyy="0.010354099206679"
+        iyz="-1.1468339237087E-08"
+        izz="0.0234717170238765" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_front_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_front_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_front_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0.199"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="yaw_link" />
+    <child
+      link="pitch_front_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_bottom_link">
+    <inertial>
+      <origin
+        xyz="0.145938538391783 -0.0267150032965762 -0.000164880152562885"
+        rpy="0 0 0" />
+      <mass
+        value="0.359278164541613" />
+      <inertia
+        ixx="8.69515357202943E-05"
+        ixy="2.94530378729764E-05"
+        ixz="1.30704884723274E-05"
+        iyy="0.00318136469154626"
+        iyz="2.71246725831354E-07"
+        izz="0.00322755017688283" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_bottom_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_bottom_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_bottom_joint"
+    type="continuous">
+    <origin
+      xyz="-0.103 -0.2868 0"
+      rpy="0 0 0" />
+    <parent
+      link="pitch_front_link" />
+    <child
+      link="pitch_bottom_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_end_link">
+    <inertial>
+      <origin
+        xyz="0.0181222503368475 -0.0271431553580298 0.00078916152407138"
+        rpy="0 0 0" />
+      <mass
+        value="2.03212959698795" />
+      <inertia
+        ixx="0.0606524184410242"
+        ixy="-0.00222451337976582"
+        ixz="-2.87257415982794E-08"
+        iyy="0.0013986565467699"
+        iyz="1.0037428875244E-06"
+        izz="0.0612400399793586" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_end_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_end_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_end_joint"
+    type="continuous">
+    <origin
+      xyz="0.3404 -0.00013562 0"
+      rpy="0 0 0" />
+    <parent
+      link="pitch_bottom_link" />
+    <child
+      link="pitch_end_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="main_insertion_link">
+    <inertial>
+      <origin
+        xyz="0.00861649078483576 0.000792493546022954 0.0479275215010903"
+        rpy="0 0 0" />
+      <mass
+        value="0.231083126142288" />
+      <inertia
+        ixx="0.000356416783461059"
+        ixy="2.62376742683313E-11"
+        ixz="2.77529833703644E-05"
+        iyy="0.000316752755073933"
+        iyz="3.87976295416424E-11"
+        izz="6.30504639260864E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/main_insertion_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/main_insertion_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="main_insertion_joint"
+    type="prismatic">
+    <origin
+      xyz="0.042 -0.086143 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="pitch_end_link" />
+    <child
+      link="main_insertion_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tool_link">
+    <inertial>
+      <origin
+        xyz="3.57894269775727E-13 0.000792500000458274 -0.107318744167863"
+        rpy="0 0 0" />
+      <mass
+        value="1.90735335721661" />
+      <inertia
+        ixx="0.022069558443679"
+        ixy="-5.70630522179027E-19"
+        ixz="7.01522710069977E-14"
+        iyy="0.0218358668755263"
+        iyz="1.98699804379129E-14"
+        izz="0.00102858243487538" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/tool_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/tool_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_joint"
+    type="continuous">
+    <origin
+      xyz="0.061 0 0"
+      rpy="3.1416 0 3.1416" />
+    <parent
+      link="main_insertion_link" />
+    <child
+      link="tool_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_top_link">
+    <inertial>
+      <origin
+        xyz="0.170200036489237 -6.78163827002587E-05 0.000792500000307172"
+        rpy="0 0 0" />
+      <mass
+        value="0.438505062074938" />
+      <inertia
+        ixx="1.10659471807328E-05"
+        ixy="1.86421651167269E-06"
+        ixz="-2.06694368494901E-18"
+        iyy="0.00468972404041477"
+        iyz="5.30468786710676E-19"
+        izz="0.00469026586610571" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_top_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.666666666666667 0.129411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_top_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_top_joint"
+    type="continuous">
+    <origin
+      xyz="-0.10847 -0.32426 0"
+      rpy="0 0 0" />
+    <parent
+      link="pitch_front_link" />
+    <child
+      link="pitch_top_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_back_link">
+    <inertial>
+      <origin
+        xyz="-0.0328531702873107 -0.149972922109025 -0.00806128734328299"
+        rpy="0 0 0" />
+      <mass
+        value="0.421400475399121" />
+      <inertia
+        ixx="0.00338153611552644"
+        ixy="-0.00127772460723106"
+        ixz="0.000103939492741364"
+        iyy="0.000603265699350888"
+        iyz="0.000278817421143785"
+        izz="0.00392344270597774" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_back_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.666666666666667 0.129411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/pitch_back_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_back_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.0098 0.16243"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="yaw_link" />
+    <child
+      link="pitch_back_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="remote_center_link">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 -1.38777878078145E-17 1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.00448200551912144" />
+      <inertia
+        ixx="1.79280220764858E-07"
+        ixy="1.88302735354785E-39"
+        ixz="2.9999539315422E-24"
+        iyy="1.79280220764858E-07"
+        iyz="3.93703508028449E-24"
+        izz="1.79280220764858E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/ECM/remote_center_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.32" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/remote_center_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="remote_center_joint"
+    type="continuous">
+    <origin
+      xyz="0.6126 0 0.1016"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="base_link_e" />
+    <child
+      link="remote_center_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="C_A4_L0">
+    <inertial>
+      <origin
+        xyz="0.0568401189750005 4.12437087371487E-07 0.148466808963967"
+        rpy="0 0 0" />
+      <mass
+        value="8.19044705659415" />
+      <inertia
+        ixx="0.0849399138017188"
+        ixy="-2.62415327596974E-07"
+        ixz="-0.00950408519583708"
+        iyy="0.0840388037894655"
+        iyz="-7.34496732044212E-07"
+        izz="0.0337578517914837" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A4_L0"
+    type="prismatic">
+    <origin
+      xyz="-0.1912 -0.1016 0.7611"
+      rpy="3.1416 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="C_A4_L0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="C_A4_L1">
+    <inertial>
+      <origin
+        xyz="-1.53732094321235E-06 0.181425880608415 -0.108875254172993"
+        rpy="0 0 0" />
+      <mass
+        value="4.28519712694864" />
+      <inertia
+        ixx="0.16530081622366"
+        ixy="9.85076636306854E-08"
+        ixz="1.28266441489317E-07"
+        iyy="0.0318878525507908"
+        iyz="-0.0216371077902923"
+        izz="0.151815227099322" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A4_L1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="C_A4_L0" />
+    <child
+      link="C_A4_L1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="C_A4_L2">
+    <inertial>
+      <origin
+        xyz="0.208919873467034 -5.98681643837473E-06 0.0907666144838897"
+        rpy="0 0 0" />
+      <mass
+        value="3.37391295638733" />
+      <inertia
+        ixx="0.0170495831652976"
+        ixy="9.53523844264286E-08"
+        ixz="0.0010251016692914"
+        iyy="0.122639914279668"
+        iyz="-4.55783665899413E-07"
+        izz="0.114771908742368" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A4_L2"
+    type="continuous">
+    <origin
+      xyz="0 0.4318 -0.17125"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="C_A4_L1" />
+    <child
+      link="C_A4_L2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="C_A4_L3">
+    <inertial>
+      <origin
+        xyz="-7.80457090066022E-07 -0.0671937597670209 0.0457966340632673"
+        rpy="0 0 0" />
+      <mass
+        value="0.955411449199708" />
+      <inertia
+        ixx="0.00502239974642493"
+        ixy="-1.37715041295868E-08"
+        ixz="-6.0690656865772E-08"
+        iyy="0.0048536659267774"
+        iyz="0.000256157144769038"
+        izz="0.00220603249495337" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A4_L3"
+    type="continuous">
+    <origin
+      xyz="0.4318 0 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="C_A4_L2" />
+    <child
+      link="C_A4_L3" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="C_A4_L4">
+    <inertial>
+      <origin
+        xyz="7.51020667877356E-08 0.133689552376978 0.106531282887325"
+        rpy="0 0 0" />
+      <mass
+        value="3.17072930481284" />
+      <inertia
+        ixx="0.0814803861538944"
+        ixy="-4.7064167106958E-09"
+        ixz="3.02080268008584E-09"
+        iyy="0.0179293396076295"
+        iyz="-0.0218807205955915"
+        izz="0.0668097456900371" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A4_L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A4_L4"
+    type="continuous">
+    <origin
+      xyz="0 -0.07305 -0.061"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="C_A4_L3" />
+    <child
+      link="C_A4_L4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <!--Insert PSM-->
+  <link
+    name="base_link3">
+    <inertial>
+      <origin
+        xyz="-1.18741555048179E-08 -0.170155335321591 -0.0856068342185303"
+        rpy="0 0 0" />
+      <mass
+        value="2.01611936799798" />
+      <inertia
+        ixx="0.0334285326507196"
+        ixy="4.64200047056906E-10"
+        ixz="-2.57122028275464E-09"
+        iyy="0.00942519512814716"
+        iyz="0.00334011712880409"
+        izz="0.0289733384845702" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link_PSM.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link_PSM.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+      name="PSM3_RCM"
+      type="fixed">
+    <origin
+        xyz="0.0 0.8343 -0.04984"
+        rpy="0.0 ${PI} 0.0" />
+    <parent
+        link="C_A4_L4" />
+    <child
+        link="base_link3" />
+  </joint>
+  <link
+    name="yaw_Link3">
+    <inertial>
+      <origin
+        xyz="-0.038768826895421 7.84810687538382E-05 0.0415960702785929"
+        rpy="0 0 0" />
+      <mass
+        value="1.47048370646334" />
+      <inertia
+        ixx="0.0181432072832042"
+        ixy="-4.42692109987319E-06"
+        ixz="-0.000485887653924728"
+        iyy="0.0157144975865826"
+        iyz="7.28306470719894E-06"
+        izz="0.00824930410920911" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/yaw_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="yaw_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link3" />
+    <child
+      link="yaw_Link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_back_Link3">
+    <inertial>
+      <origin
+        xyz="-0.0116509415966225 -0.0362409831473348 3.55759910590988E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.984944647833387" />
+      <inertia
+        ixx="0.00197274180266606"
+        ixy="-0.00044199308571368"
+        ixz="-4.08253443965781E-07"
+        iyy="0.00561318906682764"
+        iyz="-1.26989789282641E-06"
+        izz="0.00557903259577521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_back_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_back_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_back_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0296"
+      rpy="-1.5708 -0.29073 0" />
+    <parent
+      link="yaw_Link3" />
+    <child
+      link="pitch_back_Link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_bottom_Link3">
+    <inertial>
+      <origin
+        xyz="0.256832099418569 -0.0103480348656513 -6.17918787843765E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.445694866856226" />
+      <inertia
+        ixx="0.000459792543956463"
+        ixy="-0.000318009798755438"
+        ixz="3.98499062508475E-07"
+        iyy="0.011271027728255"
+        iyz="2.50630970360201E-08"
+        izz="0.0111023946030583" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_bottom_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_bottom_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_bottom_joint3"
+    type="continuous">
+    <origin
+      xyz="0.150000000000001 0 0"
+      rpy="0 0 1.86152392470427" />
+    <parent
+      link="pitch_back_Link3" />
+    <child
+      link="pitch_bottom_Link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_end_Link3">
+    <inertial>
+      <origin
+        xyz="-0.00192933659672778 -0.136126867582951 -5.97042575623084E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.09102449600226" />
+      <inertia
+        ixx="0.0428446589914192"
+        ixy="-0.00123970076885623"
+        ixz="2.89034643154435E-11"
+        iyy="0.00156904884363725"
+        iyz="1.61608502107055E-08"
+        izz="0.0422745310219351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_end_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_end_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_end_joint3"
+    type="continuous">
+    <origin
+      xyz="0.516000000000004 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="pitch_bottom_Link3" />
+    <child
+      link="pitch_end_Link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="main_insertion_Link3">
+    <inertial>
+      <origin
+        xyz="0.00405627466206304 -0.00010934070517156 0.0104645658395064"
+        rpy="0 0 0" />
+      <mass
+        value="0.224908528510799" />
+      <inertia
+        ixx="0.00146102483490814"
+        ixy="-1.39327117443586E-07"
+        ixz="9.74684983027102E-06"
+        iyy="0.00140269171680101"
+        iyz="-1.56795926093259E-06"
+        izz="8.71925300786774E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/main_insertion_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.556862745098039 0.0588235294117647 0.4" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/main_insertion_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="main_insertion_joint3"
+    type="prismatic">
+    <origin
+      xyz="0.043 -0.28809 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="pitch_end_Link3" />
+    <child
+      link="main_insertion_Link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tool_roll_link3">
+    <inertial>
+      <origin
+        xyz="-1.11532435509432E-08 -6.6823986593555E-09 -0.00582338046522377"
+        rpy="0 0 0" />
+      <mass
+        value="0.000332248729031213" />
+      <inertia
+        ixx="3.38636633286667E-09"
+        ixy="-7.19368459031559E-14"
+        ixz="2.65893854539229E-14"
+        iyy="3.00439499234113E-09"
+        iyz="5.81813222258735E-16"
+        izz="3.06558087973818E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_roll_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_roll_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_roll_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0.41690000000025"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="main_insertion_Link3" />
+    <child
+      link="tool_roll_link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="tool_pitch_link3">
+    <inertial>
+      <origin
+        xyz="0.00357679574849837 -4.86716344861859E-05 4.30864744424951E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.000259757477941411" />
+      <inertia
+        ixx="1.5106839937408E-09"
+        ixy="-4.78038784281558E-13"
+        ixz="7.19611086185614E-14"
+        iyy="2.24394015473119E-09"
+        iyz="-6.72201295370511E-14"
+        izz="2.52209114024657E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_pitch_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_pitch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_pitch_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="tool_roll_link3" />
+    <child
+      link="tool_pitch_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_yaw_link3">
+    <inertial>
+      <origin
+        xyz="-3.38952951650343E-15 -1.5779044737485E-13 -5.00000011357526E-05"
+        rpy="0 0 0" />
+      <mass
+        value="6.6366144807084E-06" />
+      <inertia
+        ixx="1.45272725726673E-11"
+        ixy="-5.89016142565026E-29"
+        ixz="3.04410826403519E-28"
+        iyy="1.45272725726673E-11"
+        iyz="-3.69293450325411E-28"
+        izz="1.40198480904964E-12" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_yaw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_yaw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_yaw_joint3"
+    type="continuous">
+    <origin
+      xyz="0.00909999999990735 -5.00000000006606E-05 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="tool_pitch_link3" />
+    <child
+      link="tool_yaw_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_gripper1_link3">
+    <inertial>
+      <origin
+        xyz="0.000188736572120506 0.00135264242377037 -0.000866946481578035"
+        rpy="0 0 0" />
+      <mass
+        value="3.906958594018E-05" />
+      <inertia
+        ixx="3.48956207778842E-10"
+        ixy="-3.12215330147036E-11"
+        ixz="-4.73124191877469E-12"
+        iyy="6.90406732743504E-11"
+        iyz="-4.14656110451125E-11"
+        izz="3.89386761583552E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_gripper1_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="tool_yaw_link3" />
+    <child
+      link="tool_gripper1_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_gripper2_link3">
+    <inertial>
+      <origin
+        xyz="-0.000188736572127269 0.00135264242377034 0.000866946479306852"
+        rpy="0 0 0" />
+      <mass
+        value="3.906958594018E-05" />
+      <inertia
+        ixx="3.48956207778838E-10"
+        ixy="3.1221533014704E-11"
+        ixz="-4.73124191877455E-12"
+        iyy="6.90406732743506E-11"
+        iyz="4.14656110451119E-11"
+        izz="3.89386761583548E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_gripper2_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="tool_yaw_link3" />
+    <child
+      link="tool_gripper2_link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_top_Link3">
+    <inertial>
+      <origin
+        xyz="0.312459561160537 -0.000565655662915554 -3.4131485644066E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.178406510206941" />
+      <inertia
+        ixx="0.000149887039469712"
+        ixy="1.12753385823003E-05"
+        ixz="6.15489152141568E-09"
+        iyy="0.00463460001936713"
+        iyz="-1.52835136229151E-11"
+        izz="0.00449516000245412" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_top_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_top_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_top_joint3"
+    type="continuous">
+    <origin
+      xyz="0.183657966666667 0.0141205977162994 0"
+      rpy="0 0 1.86152392470384" />
+    <parent
+      link="pitch_back_Link3" />
+    <child
+      link="pitch_top_Link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="counterweight_Link3">
+    <inertial>
+      <origin
+        xyz="0.00864945005675313 -7.99999995084297E-07 -0.0428319993376595"
+        rpy="0 0 0" />
+      <mass
+        value="0.0572294566812768" />
+      <inertia
+        ixx="4.07512584699308E-05"
+        ixy="-3.70276415216852E-20"
+        ixz="-7.26206416684738E-22"
+        iyy="6.1224274372571E-06"
+        iyz="-1.14884401091105E-19"
+        izz="4.07512584699308E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/counterweight_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/counterweight_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="counterweight_joint3"
+    type="prismatic">
+    <origin
+      xyz="0.028665 -0.095804 0"
+      rpy="1.5708 0 1.8615" />
+    <parent
+      link="pitch_back_Link3" />
+    <child
+      link="counterweight_Link3" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="pitch_front_Link3">
+    <inertial>
+      <origin
+        xyz="0.0962686548282791 8.6763929374456E-14 0.0475509864128363"
+        rpy="0 0 0" />
+      <mass
+        value="0.0744252818496182" />
+      <inertia
+        ixx="8.75948153763795E-06"
+        ixy="-1.95773031032992E-16"
+        ixz="1.7108923278664E-05"
+        iyy="0.000226538553224573"
+        iyz="1.53635459503282E-17"
+        izz="0.000223217548259648" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_front_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_front_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_front_joint3"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0664000000000003"
+      rpy="-1.57079632679489 -0.290727597908941 0" />
+    <parent
+      link="yaw_Link3" />
+    <child
+      link="pitch_front_Link3" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="C_A3_L0">
+    <inertial>
+      <origin
+        xyz="0.0602111511554431 -2.86697723617113E-07 0.113200006766268"
+        rpy="0 0 0" />
+      <mass
+        value="6.0481665164759" />
+      <inertia
+        ixx="0.0427518444074194"
+        ixy="-6.06000766493417E-07"
+        ixz="-0.00566678003440809"
+        iyy="0.0405000184556711"
+        iyz="-5.60004706619075E-07"
+        izz="0.0232273001747373" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A3_L0"
+    type="prismatic">
+    <origin
+      xyz="0 0.0896 0.3813"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="C_A3_L0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="C_A3_L1">
+    <inertial>
+      <origin
+        xyz="-8.83879091084783E-07 -0.269226910798469 0.0974465195036079"
+        rpy="0 0 0" />
+      <mass
+        value="9.21434336500291" />
+      <inertia
+        ixx="0.512546431408335"
+        ixy="-7.87413878696987E-07"
+        ixz="-2.2225784954901E-07"
+        iyy="0.0466755950520095"
+        iyz="-0.0223238622276571"
+        izz="0.500779572905842" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A3_L1"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 0 1.5708" />
+    <parent
+      link="C_A3_L0" />
+    <child
+      link="C_A3_L1" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="C_A3_L2">
+    <inertial>
+      <origin
+        xyz="0.208919873467035 -5.98681643829146E-06 0.0907666144838893"
+        rpy="0 0 0" />
+      <mass
+        value="3.37391295638732" />
+      <inertia
+        ixx="0.0170495831652977"
+        ixy="9.53523844823035E-08"
+        ixz="0.00102510166929142"
+        iyy="0.122639914279668"
+        iyz="-4.55783665923031E-07"
+        izz="0.114771908742368" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A3_L2"
+    type="continuous">
+    <origin
+      xyz="0 -0.5842 -0.00025"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="C_A3_L1" />
+    <child
+      link="C_A3_L2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="C_A3_L3">
+    <inertial>
+      <origin
+        xyz="-2.15031212252859E-07 -0.147366782754716 0.02995924765771"
+        rpy="0 0 0" />
+      <mass
+        value="1.4604020205914" />
+      <inertia
+        ixx="0.0128895813730033"
+        ixy="-4.59897542456449E-08"
+        ixz="-2.40422021236986E-08"
+        iyy="0.00658394949729739"
+        iyz="0.0023007937437538"
+        izz="0.00938069944932422" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A3_L3"
+    type="continuous">
+    <origin
+      xyz="0.4318 0 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="C_A3_L2" />
+    <child
+      link="C_A3_L3" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="C_A3_L4">
+    <inertial>
+      <origin
+        xyz="7.51020668154911E-08 0.133689552376978 0.106531282887325"
+        rpy="0 0 0" />
+      <mass
+        value="3.17072930481284" />
+      <inertia
+        ixx="0.0814803861538943"
+        ixy="-4.70641669523646E-09"
+        ixz="3.02080267142372E-09"
+        iyy="0.0179293396076295"
+        iyz="-0.0218807205955915"
+        izz="0.066809745690037" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/C_A3_L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C_A3_L4"
+    type="continuous">
+    <origin
+      xyz="0 -0.19995 -0.061"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="C_A3_L3" />
+    <child
+      link="C_A3_L4" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="base_link2">
+    <inertial>
+      <origin
+        xyz="-1.18741555048179E-08 -0.170155335321591 -0.0856068342185303"
+        rpy="0 0 0" />
+      <mass
+        value="2.01611936799798" />
+      <inertia
+        ixx="0.0334285326507196"
+        ixy="4.64200047056906E-10"
+        ixz="-2.57122028275464E-09"
+        iyy="0.00942519512814716"
+        iyz="0.00334011712880409"
+        izz="0.0289733384845702" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link_PSM.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/base_link_PSM.STL" />
+      </geometry>
+    </collision>
+  </link>
+   <joint
+      name="PSM2_RCM"
+      type="fixed">
+    <origin
+        xyz="0.0 0.8343 -0.04984"
+        rpy="0.0 ${PI} 0.0" />
+    <parent
+        link="C_A3_L4" />
+    <child
+        link="base_link2" />
+  </joint>
+  <link
+    name="yaw_Link2">
+    <inertial>
+      <origin
+        xyz="-0.038768826895421 7.84810687538382E-05 0.0415960702785929"
+        rpy="0 0 0" />
+      <mass
+        value="1.47048370646334" />
+      <inertia
+        ixx="0.0181432072832042"
+        ixy="-4.42692109987319E-06"
+        ixz="-0.000485887653924728"
+        iyy="0.0157144975865826"
+        iyz="7.28306470719894E-06"
+        izz="0.00824930410920911" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/yaw_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="yaw_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base_link2" />
+    <child
+      link="yaw_Link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_back_Link2">
+    <inertial>
+      <origin
+        xyz="-0.0116509415966225 -0.0362409831473348 3.55759910590988E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.984944647833387" />
+      <inertia
+        ixx="0.00197274180266606"
+        ixy="-0.00044199308571368"
+        ixz="-4.08253443965781E-07"
+        iyy="0.00561318906682764"
+        iyz="-1.26989789282641E-06"
+        izz="0.00557903259577521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_back_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_back_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_back_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.0296"
+      rpy="-1.5708 -0.29073 0" />
+    <parent
+      link="yaw_Link2" />
+    <child
+      link="pitch_back_Link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_bottom_Link2">
+    <inertial>
+      <origin
+        xyz="0.256832099418569 -0.0103480348656513 -6.17918787843765E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.445694866856226" />
+      <inertia
+        ixx="0.000459792543956463"
+        ixy="-0.000318009798755438"
+        ixz="3.98499062508475E-07"
+        iyy="0.011271027728255"
+        iyz="2.50630970360201E-08"
+        izz="0.0111023946030583" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_bottom_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_bottom_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_bottom_joint2"
+    type="continuous">
+    <origin
+      xyz="0.150000000000001 0 0"
+      rpy="0 0 1.86152392470427" />
+    <parent
+      link="pitch_back_Link2" />
+    <child
+      link="pitch_bottom_Link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="pitch_end_Link2">
+    <inertial>
+      <origin
+        xyz="-0.00192933659672778 -0.136126867582951 -5.97042575623084E-08"
+        rpy="0 0 0" />
+      <mass
+        value="2.09102449600226" />
+      <inertia
+        ixx="0.0428446589914192"
+        ixy="-0.00123970076885623"
+        ixz="2.89034643154435E-11"
+        iyy="0.00156904884363725"
+        iyz="1.61608502107055E-08"
+        izz="0.0422745310219351" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_end_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_end_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_end_joint2"
+    type="continuous">
+    <origin
+      xyz="0.516000000000004 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="pitch_bottom_Link2" />
+    <child
+      link="pitch_end_Link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="main_insertion_Link2">
+    <inertial>
+      <origin
+        xyz="0.00405627466206304 -0.00010934070517156 0.0104645658395064"
+        rpy="0 0 0" />
+      <mass
+        value="0.224908528510799" />
+      <inertia
+        ixx="0.00146102483490814"
+        ixy="-1.39327117443586E-07"
+        ixz="9.74684983027102E-06"
+        iyy="0.00140269171680101"
+        iyz="-1.56795926093259E-06"
+        izz="8.71925300786774E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/main_insertion_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.556862745098039 0.0588235294117647 0.4" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/main_insertion_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="main_insertion_joint2"
+    type="prismatic">
+    <origin
+      xyz="0.043 -0.28809 0"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="pitch_end_Link2" />
+    <child
+      link="main_insertion_Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tool_roll_link2">
+    <inertial>
+      <origin
+        xyz="-1.11532435509432E-08 -6.6823986593555E-09 -0.00582338046522377"
+        rpy="0 0 0" />
+      <mass
+        value="0.000332248729031213" />
+      <inertia
+        ixx="3.38636633286667E-09"
+        ixy="-7.19368459031559E-14"
+        ixz="2.65893854539229E-14"
+        iyy="3.00439499234113E-09"
+        iyz="5.81813222258735E-16"
+        izz="3.06558087973818E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_roll_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_roll_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_roll_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0.41690000000025"
+      rpy="0 0 -3.14159265358979" />
+    <parent
+      link="main_insertion_Link2" />
+    <child
+      link="tool_roll_link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="tool_pitch_link2">
+    <inertial>
+      <origin
+        xyz="0.00357679574849837 -4.86716344861859E-05 4.30864744424951E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.000259757477941411" />
+      <inertia
+        ixx="1.5106839937408E-09"
+        ixy="-4.78038784281558E-13"
+        ixz="7.19611086185614E-14"
+        iyy="2.24394015473119E-09"
+        iyz="-6.72201295370511E-14"
+        izz="2.52209114024657E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_pitch_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_pitch_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_pitch_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="tool_roll_link2" />
+    <child
+      link="tool_pitch_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_yaw_link2">
+    <inertial>
+      <origin
+        xyz="-3.38952951650343E-15 -1.5779044737485E-13 -5.00000011357526E-05"
+        rpy="0 0 0" />
+      <mass
+        value="6.6366144807084E-06" />
+      <inertia
+        ixx="1.45272725726673E-11"
+        ixy="-5.89016142565026E-29"
+        ixz="3.04410826403519E-28"
+        iyy="1.45272725726673E-11"
+        iyz="-3.69293450325411E-28"
+        izz="1.40198480904964E-12" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_yaw_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_yaw_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_yaw_joint2"
+    type="continuous">
+    <origin
+      xyz="0.00909999999990735 -5.00000000006606E-05 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="tool_pitch_link2" />
+    <child
+      link="tool_yaw_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_gripper1_link2">
+    <inertial>
+      <origin
+        xyz="0.000188736572120506 0.00135264242377037 -0.000866946481578035"
+        rpy="0 0 0" />
+      <mass
+        value="3.906958594018E-05" />
+      <inertia
+        ixx="3.48956207778842E-10"
+        ixy="-3.12215330147036E-11"
+        ixz="-4.73124191877469E-12"
+        iyy="6.90406732743504E-11"
+        iyz="-4.14656110451125E-11"
+        izz="3.89386761583552E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_gripper1_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="tool_yaw_link2" />
+    <child
+      link="tool_gripper1_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tool_gripper2_link2">
+    <inertial>
+      <origin
+        xyz="-0.000188736572127269 0.00135264242377034 0.000866946479306852"
+        rpy="0 0 0" />
+      <mass
+        value="3.906958594018E-05" />
+      <inertia
+        ixx="3.48956207778838E-10"
+        ixy="3.1221533014704E-11"
+        ixz="-4.73124191877455E-12"
+        iyy="6.90406732743506E-11"
+        iyz="4.14656110451119E-11"
+        izz="3.89386761583548E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/tool_gripper2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tool_gripper2_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="tool_yaw_link2" />
+    <child
+      link="tool_gripper2_link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="pitch_top_Link2">
+    <inertial>
+      <origin
+        xyz="0.312459561160537 -0.000565655662915554 -3.4131485644066E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.178406510206941" />
+      <inertia
+        ixx="0.000149887039469712"
+        ixy="1.12753385823003E-05"
+        ixz="6.15489152141568E-09"
+        iyy="0.00463460001936713"
+        iyz="-1.52835136229151E-11"
+        izz="0.00449516000245412" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_top_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_top_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_top_joint2"
+    type="continuous">
+    <origin
+      xyz="0.183657966666667 0.0141205977162994 0"
+      rpy="0 0 1.86152392470384" />
+    <parent
+      link="pitch_back_Link2" />
+    <child
+      link="pitch_top_Link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="counterweight_Link2">
+    <inertial>
+      <origin
+        xyz="0.00864945005675313 -7.99999995084297E-07 -0.0428319993376595"
+        rpy="0 0 0" />
+      <mass
+        value="0.0572294566812768" />
+      <inertia
+        ixx="4.07512584699308E-05"
+        ixy="-3.70276415216852E-20"
+        ixz="-7.26206416684738E-22"
+        iyy="6.1224274372571E-06"
+        iyz="-1.14884401091105E-19"
+        izz="4.07512584699308E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/counterweight_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/counterweight_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="counterweight_joint2"
+    type="prismatic">
+    <origin
+      xyz="0.028665 -0.095804 0"
+      rpy="1.5708 0 1.8615" />
+    <parent
+      link="pitch_back_Link2" />
+    <child
+      link="counterweight_Link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="pitch_front_Link2">
+    <inertial>
+      <origin
+        xyz="0.0962686548282791 8.6763929374456E-14 0.0475509864128363"
+        rpy="0 0 0" />
+      <mass
+        value="0.0744252818496182" />
+      <inertia
+        ixx="8.75948153763795E-06"
+        ixy="-1.95773031032992E-16"
+        ixz="1.7108923278664E-05"
+        iyy="0.000226538553224573"
+        iyz="1.53635459503282E-17"
+        izz="0.000223217548259648" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_front_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cart.SLDASM/meshes/pitch_front_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pitch_front_joint2"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.0664000000000003"
+      rpy="-1.57079632679489 -0.290727597908941 0" />
+    <parent
+      link="yaw_Link2" />
+    <child
+      link="pitch_front_Link2" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+
+</robot>
