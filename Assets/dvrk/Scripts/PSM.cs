@@ -72,18 +72,18 @@ namespace DVRK {
 
             Debug.Log("Recieved from AMBF: " + state.GetStateJoint.Position);
             // Assuming correct order
-            // foreach (URDFJoint joint in independentJoints)
-            // {
-            //     if (joint.jointType == URDFJoint.JointType.Prismatic)
-            //     {
-            //         joint.SetJointValue(state.GetStateJoint.Position[currentIndex]);
-            //     }
-            //     else
-            //     {
-            //         joint.SetJointValue(state.GetStateJoint.Position[currentIndex] / (float)(Math.PI) * 180f);
-            //     }
-            //     currentIndex++;
-            // }
+             foreach (URDFJoint joint in independentJoints)
+             {
+                 if (joint.jointType == URDFJoint.JointType.Prismatic)
+                 {
+                     joint.SetJointValue(state.GetStateJoint.Position[currentIndex]);
+                 }
+                 else
+                 {
+                     joint.SetJointValue(state.GetStateJoint.Position[currentIndex] / (float)(Math.PI) * 180f);
+                 }
+                 currentIndex++;
+             }
             // gizmo.position = transform.parent.parent.parent.parent.parent.GetComponent<ArmControllerClassic>().PSM_end.position;
             //jaw.SetJointValue(state.GetStateJaw.Position[0] / (float)(Math.PI) * 180f);
         }

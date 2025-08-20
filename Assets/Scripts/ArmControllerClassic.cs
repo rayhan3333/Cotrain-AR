@@ -189,7 +189,7 @@ namespace DVRK
             else if (initTrue)
             {
                 Vector3 normalizedPos = RCM.position - transform.parent.parent.parent.parent.GetChild(0).position; //get shell position
-                Debug.Log("PSM: " + normalizedPos + " RCM Position: " + RCM.position + "Shell position: " + transform.parent.parent.parent.parent.GetChild(0).position);
+                //Debug.Log("PSM: " + normalizedPos + " RCM Position: " + RCM.position + "Shell position: " + transform.parent.parent.parent.parent.GetChild(0).position);
                 sujWrite.states = new float[] { normalizedPos.x, normalizedPos.y, normalizedPos.z,
                 RCM.rotation.eulerAngles.x, RCM.rotation.eulerAngles.y, RCM.rotation.eulerAngles.z};
                 if (Vector3.Distance(target.position, lastPos) > 0.0001f)
